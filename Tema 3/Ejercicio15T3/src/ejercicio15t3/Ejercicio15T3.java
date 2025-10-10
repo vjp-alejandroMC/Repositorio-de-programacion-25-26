@@ -26,9 +26,9 @@ public class Ejercicio15T3 {
         
         for (int i = 0; i <= 10; i++) {
             System.out.println(numero + " x " + i + " = " + (numero * i));
-            //Aquí defino el bucle para que empiece en 0 y acabe en 10, aparte en el print hago que el re
+            //Aquí defino el bucle para que empiece en 0 y acabe en 10, aparte en el print hago que el resultado se multiplique usando un asterisco.
         }
-       entrada.close();
+        
     }
     
 }
