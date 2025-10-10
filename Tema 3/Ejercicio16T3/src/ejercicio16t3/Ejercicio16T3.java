@@ -6,7 +6,8 @@ package ejercicio16t3;
 
 /**
  *
- * @author alumno
+ * @author Alejandro Miranda Cuadrado
+ * @since 10/10/2025
  */
 public class Ejercicio16T3 {
 
