@@ -17,6 +17,7 @@ public class Ejercicio21T4 {
      */
     public static void main(String[] args) {
         
+        pedirSegundoNum();
     }
     public static int pedirPrimerNum() {
         
@@ -38,7 +39,8 @@ public class Ejercicio21T4 {
         int num1 = pedirPrimerNum();
         
         if (num2 < num1) {
-            
+            System.out.println("Introduce un numero mayor que el primero: ");
+            num2 = entrada.nextInt();
         }
     }
 }
