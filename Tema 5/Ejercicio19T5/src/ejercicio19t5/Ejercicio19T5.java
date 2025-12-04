@@ -29,6 +29,7 @@ public class Ejercicio19T5 {
         
     }
     
+    //Método para crear empleados con datos que introduzca el usuario.
     public static Empleado crearEmpleado() {
         Scanner entrada = new Scanner(System.in);
         
@@ -45,6 +46,7 @@ public class Ejercicio19T5 {
         return new Empleado(nombre, horas, tarifa);
     }
     
+    //Método para mostrar el sueldo de los empleados.
     public static void mostrarSueldo(Empleado e) {
         e.mostrarDatos();
         System.out.println("------------------------------------------------");

@@ -6,16 +6,22 @@ package ejercicio24t5;
 
 /**
  *
- * @author alumno
+ * @author Alejandro Miranda Cuadrado
+ * @since 21/11/2025
  */
+
+//Uso de "extends" para las herencias.
 public class ProductoRefrigerado extends Producto {
+    //Atributos de la clase.
     private String organismo;
     
+    //Constructor de la clase.
     public ProductoRefrigerado(String caducidad, String lote, String organismo) {
         super(caducidad, lote);
         this.organismo = organismo;
     }
     
+    //Getters y setters.
     public String getOrganismo() {
         return organismo;
     }
@@ -24,6 +30,7 @@ public class ProductoRefrigerado extends Producto {
         this.organismo = org;
     }
     
+    //Método para mostrar la información del producto.
     @Override
     public void mostrarInformacion() {
         System.out.println("PRODUCTO REFRIGERADO");

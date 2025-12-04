@@ -27,6 +27,7 @@ public class Ejercicio16T5 {
         mostrarAlumno(a3);
     }
     
+    //Método para crear el alumno.
     public static Alumno crearAlumno() {
         Scanner entrada = new Scanner(System.in);
         
@@ -40,6 +41,7 @@ public class Ejercicio16T5 {
         return new Alumno(nombre, nota);
     }
     
+    //Método para mostrar los datos del alumno.
     public static void mostrarAlumno(Alumno a) {
         a.mostrarNotas();
     }
