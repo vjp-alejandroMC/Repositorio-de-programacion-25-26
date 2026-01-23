@@ -48,7 +48,7 @@ public class Ejercicio11T7 {
     
     public static void mostrarVector(int[] vector) {
         
-        //B
+        //Bucle que muestra los valores del array.
         for (int num : vector) {
             System.out.println(num + "");
         }

@@ -2,25 +2,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ejercicio10t7;
+package ejercicio17t7;
 
 /**
  *
  * @author Alejandro Miranda Cuadrado
- * @since 12/01/2026
+ * @since 23/01/23
  */
-public class Ejercicio10T7 {
+public class Ejercicio17T7 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         
-        //Declaracion del array y llamada a los metodos que se usaran.
         int[] vector = new int[10];
         rellenarVector(vector);
         mostrarVector(vector);
-        sustituirRepetidos(vector);
+        ordenarVector(vector);
         mostrarVector(vector);
         
     }
@@ -29,10 +28,8 @@ public class Ejercicio10T7 {
         
         int i;
         
-        //Bucle para generar los valores del array
         for (i = 0; i < vector.length; i++) {
-            
-            vector[i] = (int) (Math.random() * 8 + 1);
+            vector[i] = (int) (Math.random() * 9);
         }
     }
     
@@ -40,27 +37,26 @@ public class Ejercicio10T7 {
         
         int i;
         
-        //Bucle que muestra el array
         for (i = 0; i < vector.length; i++) {
             System.out.println("El valor de la posicion " + i + " es: " + vector[i]);
         }
     }
     
-    public static void sustituirRepetidos(int[] vector) {
+    public static void ordenarVector(int[] vector) {
         
-        int i = 0;
+        int i;
+        int j;
         int aux;
         
-        //Bucle que usa una variable auxiliar para detecytar los numeros que se repitieron y que se cambien por 0.
-        for (i = 0; i < vector.length; i++) {
-            for (aux = i + 1; aux < vector.length; aux++) {
-                
-                if (vector[i] == vector[aux]) {
-                vector[aux] = 0;
+        for (i = 0; i < vector.length - 1; i++) {
+            for (j = 0; j < vector.length - 1 - i; j++) {
+                if (vector[j + 1] > vector[j]) {
+                    aux = vector[j + 1];
+                    vector[j + 1] = vector[j];
+                    vector[j] = aux;
                 }
             }
         }
-        
     }
     
 }
