@@ -53,7 +53,7 @@ public class Ejercicio15T10 {
                     break;
 
                 default:
-                    System.out.println("Opción no válida");
+                    System.out.println("Opcion no valida");
             }
 
         } while (opcion != 5);
@@ -96,14 +96,14 @@ public class Ejercicio15T10 {
 
                 contador++;
 
-                System.out.print("¿Desea añadir más empleados? (Si/No): ");
+                System.out.print("Desea anadir mas empleados? (Si/No): ");
                 continuarEmpleados = entrada.nextLine();
 
             } while (continuarEmpleados.equalsIgnoreCase("Si"));
 
             empresas.add(empresa);
 
-            System.out.print("¿Desea añadir más empresas? (Si/No): ");
+            System.out.print("Desea anadir mas empresas? (Si/No): ");
             continuarEmpresas = entrada.nextLine();
 
         } while (continuarEmpresas.equalsIgnoreCase("Si"));
